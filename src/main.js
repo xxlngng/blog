@@ -4,9 +4,9 @@ import router from './router'
 import store from './store'
 
 // axios
-import axios from 'axios'
-import VueAxios from 'vue-axios'
-Vue.use(VueAxios, axios)
+// import axios from 'axios'
+// import VueAxios from 'vue-axios'
+// Vue.use(VueAxios, axios)
 
 // element-ui
 import ElementUI from 'element-ui';

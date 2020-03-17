@@ -17,11 +17,11 @@
       </div>
     </div>
     <div class="cont cont2">
-      <div class="wrap">
         <Article></Article>
-      </div>
     </div>
-    <div class="cont cont3">3</div>
+    <div class="cont cont3">
+      <Note></Note>
+    </div>
   </div>
 </template>
 
@@ -32,13 +32,14 @@ import $ from "@/assets/jq/jquery-1.11.0.min.js";
 import "@/assets/jq/l-by-l.min.js";
 import Clock from "@/components/clock/Clock";
 import Article from "@/components/article/Article"
+import Note from "@/components/note/Note"
 // $(".one-bo").lbyl({
 //     content: "Lorem ipsum dolor sit amet..."
 // });
 
 export default {
   name: "Home",
-  components: { Clock, Article },
+  components: { Clock, Article, Note },
   mounted() {
     this.showText();
   },
@@ -118,16 +119,10 @@ export default {
     min-height: 700px;
     width: 100%;
     background-image: url(../assets/images/2.jpg);
-    .wrap {
-      width: 1000px;
-      height: 700px;
-      margin: 0 auto;
-      // background-color: rgba(0, 0, 0, 0.3);
-      // opacity: 0.5;
-    }
+    
   }
   .cont3 {
-    min-height: 700px;
+    // min-height: 700px;
     width: 100%;
     background-image: url(../assets/images/3.jpg);
   }
