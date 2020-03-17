@@ -1,0 +1,47 @@
+body,div,p,h1,h2,h3,h4,h5,img,span{
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  color: #999999;
+}
+
+a:visited {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  background: none;
+}
+
+@font-face {
+  font-family: 'caoshu';
+  src : url('../font/caoshu.TTF');
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+  border: thin solid lightgray;
+  box-shadow: 2px 0px 2px #f6f6f6 inset;
+  -moz-box-shadow: 2px 0px 2px #f6f6f6 inset;
+  -webkit-box-shadow: 2px 0px 2px #f6f6f6 inset;
+  -o-box-shadow: 2px 0px 2px #f6f6f6 inset;
+}
