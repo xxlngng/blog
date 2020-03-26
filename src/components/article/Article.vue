@@ -1,7 +1,7 @@
 <template>
   <div class="art">
     <!-- <h2>wenzhang</h2> -->
-    <div class="co-art">
+    <div class="co-art" @click="fetchList">
 
       <div class="ar-item"  v-for="(item, index) in 9" :key="index">
         <a class="title" href="#">JavaScript拖拽效果</a>
@@ -35,7 +35,13 @@ export default {
   watch: {},
   created() {},
   mounted() {},
-  methods: {}
+  methods: {
+    fetchList() {
+      this.$http.get("/blog/articels").then(({data}) => {
+        console.log(data);
+      })
+    }
+  }
 };
 </script>
 <style lang="less" scoped>
