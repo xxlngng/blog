@@ -16,7 +16,7 @@ module.exports = {
       .end();
     config.resolve.alias.set("@", resolve("src"));
   },
-  // lintOnSave: false,//禁用eslint
+  lintOnSave: false,//禁用eslint
   configureWebpack: config => {
     if (process.env.NODE_ENV !== "production") {
       // 开发环境配置

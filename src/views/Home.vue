@@ -126,5 +126,5 @@ export default {
     width: 100%;
     background-image: url(../assets/images/3.jpg);
   }
-}</style
->>
+}
+</style>
